@@ -7,8 +7,8 @@ COPY src/BambuTunnel.h /build/src/
 
 RUN mkdir -p /build/deps
 WORKDIR /build/deps
-RUN curl -LOJ https://public-cdn.bambulab.com/upgrade/studio/plugins/01.04.00.15/linux_01.04.00.15.zip
-RUN unzip linux_01.04.00.15.zip
+RUN curl -LOJ https://public-cdn.bblmw.com/upgrade/studio/plugins/01.09.05.01/8bfca1cf1d/linux_01.09.05.01.zip
+RUN unzip linux_01.09.05.01.zip
 
 RUN gcc /build/src/BambuP1Streamer.cpp -o /build/out/BambuP1Streamer
 
